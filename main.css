@@ -22,6 +22,11 @@ h2 {
 
 a {
     color: #0083e8;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
 }
 
 b, strong {
@@ -43,6 +48,23 @@ b, strong {
     width: 100%;
 }
 
+.float-right {
+    float: right;
+    margin-left: 1em;
+    margin-bottom: 1em;
+}
+
+@media screen and (max-width: 700px) {
+    .float-right {
+        float: none;
+        margin-left: 0;
+    }
+}
+
+img.portrait {
+    width: 300px;
+}
+
 /*
 .banner img {
     width: 100%;
@@ -62,6 +84,15 @@ b, strong {
     color: #545454;
     background-color: #fff;
     box-shadow: 0 0 10px #aaa;
+}
+
+@media screen and (max-width: 800px) {
+    html {background: white}
+    .content {
+        margin: 0;
+        box-shadow: none;
+        padding: 0em 2em 4em;
+    }
 }
 
 li {list-style: none; margin-bottom: 1em}
