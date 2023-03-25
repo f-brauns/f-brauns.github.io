@@ -1,5 +1,5 @@
 html {
-    background: #e6e9e9;
+    background: white;
     -webkit-font-smoothing: antialiased;
 }
 
@@ -54,15 +54,24 @@ b, strong {
     margin-bottom: 1em;
 }
 
+.portrait {
+    width: 300px;
+}
+
 @media screen and (max-width: 700px) {
     .float-right {
         float: none;
         margin-left: 0;
     }
+    .portrait {
+        width: 50%;
+        margin: auto;
+    }
 }
 
-img.portrait {
-    width: 300px;
+
+.portrait img {
+    width: 100%;
 }
 
 /*
@@ -78,14 +87,14 @@ img.portrait {
 .content {
     position: relative;
     margin: 0 auto;
-    margin-top: -20px;
-    max-width: 800px;
-    padding: 2em 2em 4em;
+    max-width: 740px;
+    padding: 0em 2em 4em;
     color: #545454;
     background-color: #fff;
-    box-shadow: 0 0 10px #aaa;
+    /* box-shadow: 0 0 10px #aaa; */
 }
 
+/*
 @media screen and (max-width: 800px) {
     html {background: white}
     .content {
@@ -94,6 +103,7 @@ img.portrait {
         padding: 0em 2em 4em;
     }
 }
+*/
 
 li {list-style: none; margin-bottom: 1em}
 
@@ -107,4 +117,12 @@ em {
     color: darkred;
     font-style: inherit;
 }
+
+table.cv {
+    width: 100%;
+}
+
+td {vertical-align: top}
+
+table.cv td:first-child {width: 8em}
 
