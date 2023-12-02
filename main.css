@@ -20,6 +20,8 @@ h2 {
     margin-top: 1.3em;
 }
 
+h3 {margin-bottom: 0.5em;}
+
 a {
     color: #0083e8;
     text-decoration: none;
@@ -105,9 +107,22 @@ b, strong {
 }
 */
 
-li {list-style: none; margin-bottom: 1em}
+ul.bullet {
+    list-style-type: disc;
+    margin-top: 0em; 
+/*    padding-inline-start: 0em;*/
+}
 
-li h4 {
+ul.publications {
+    list-style: none; 
+    padding-inline-start: 0em;
+}
+
+ul.publications li {
+    margin-bottom: 1em
+}
+
+ul.publications li h4 {
     margin: 0;
     margin-bottom: 0.1em;
     font-weight: 500;
